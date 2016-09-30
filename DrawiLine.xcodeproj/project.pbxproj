@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		364118FA1D9E1753001879A3 /* ViewButtonDrawLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364118F91D9E1753001879A3 /* ViewButtonDrawLineViewController.swift */; };
 		36B28AA11D9CD0A30022A393 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B28AA01D9CD0A30022A393 /* AppDelegate.swift */; };
 		36B28AA31D9CD0A30022A393 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B28AA21D9CD0A30022A393 /* ViewController.swift */; };
 		36B28AA61D9CD0A30022A393 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36B28AA41D9CD0A30022A393 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		364118F91D9E1753001879A3 /* ViewButtonDrawLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewButtonDrawLineViewController.swift; sourceTree = "<group>"; };
 		36B28A9D1D9CD0A30022A393 /* DrawiLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawiLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36B28AA01D9CD0A30022A393 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36B28AA21D9CD0A30022A393 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				36B28AA91D9CD0A30022A393 /* LaunchScreen.storyboard */,
 				36B28AAC1D9CD0A30022A393 /* Info.plist */,
 				36B28AB41D9CD2360022A393 /* Draw2D.swift */,
+				364118F91D9E1753001879A3 /* ViewButtonDrawLineViewController.swift */,
 			);
 			path = DrawiLine;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36B28AA31D9CD0A30022A393 /* ViewController.swift in Sources */,
+				364118FA1D9E1753001879A3 /* ViewButtonDrawLineViewController.swift in Sources */,
 				36B28AA11D9CD0A30022A393 /* AppDelegate.swift in Sources */,
 				36B28AB51D9CD2360022A393 /* Draw2D.swift in Sources */,
 			);
@@ -292,6 +296,7 @@
 				36B28AB11D9CD0A30022A393 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

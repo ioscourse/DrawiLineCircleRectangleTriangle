@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,11 +17,64 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="Draw2D" customModule="DrawiLine" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8f-On-ggA">
+                                <rect key="frame" x="441" y="562" width="151" height="30"/>
+                                <state key="normal" title="Draw Line with Button"/>
+                                <connections>
+                                    <segue destination="EY8-c8-ULm" kind="presentation" id="eHc-x3-CZg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="R8f-On-ggA" secondAttribute="bottom" constant="8" symbolic="YES" id="Qz5-AK-Vqp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="R8f-On-ggA" secondAttribute="trailing" constant="-12" id="nb5-L1-lDv"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--View Button Draw Line View Controller-->
+        <scene sceneID="qSA-Y3-W6W">
+            <objects>
+                <viewController id="EY8-c8-ULm" customClass="ViewButtonDrawLineViewController" customModule="DrawiLine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cCP-kl-jgR"/>
+                        <viewControllerLayoutGuide type="bottom" id="hOC-ef-50P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZCF-7b-jyg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bah-3i-GZd">
+                                <rect key="frame" x="26" y="562" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="04U-dg-qJJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ix1-hK-pR3">
+                                <rect key="frame" x="270" y="562" width="60" height="30"/>
+                                <state key="normal" title="Drawline"/>
+                                <connections>
+                                    <action selector="btnDrawLine:" destination="EY8-c8-ULm" eventType="touchUpInside" id="lIj-SJ-DdK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bah-3i-GZd" firstAttribute="baseline" secondItem="ix1-hK-pR3" secondAttribute="baseline" id="HkH-B9-xTz"/>
+                            <constraint firstItem="ix1-hK-pR3" firstAttribute="centerX" secondItem="ZCF-7b-jyg" secondAttribute="centerX" id="Nch-7U-3wd"/>
+                            <constraint firstItem="Bah-3i-GZd" firstAttribute="leading" secondItem="ZCF-7b-jyg" secondAttribute="leadingMargin" constant="6" id="RiV-cW-oHr"/>
+                            <constraint firstItem="hOC-ef-50P" firstAttribute="top" secondItem="Bah-3i-GZd" secondAttribute="bottom" constant="8" symbolic="YES" id="m6h-UP-XMt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lxE-tW-SgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973" y="363"/>
         </scene>
     </scenes>
 </document>
